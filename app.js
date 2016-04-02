@@ -13,7 +13,7 @@ app.use('/public', express.static(process.cwd() + '/public'));
 
 app.get('/', function (req, res) {
   res.render('index',
-    { url : 'https://fcc-hisener-1.c9users.io/' }
+    { url : 'https://hisener-timestamp-api.herokuapp.com/' }
   );
 });
 
