@@ -1,0 +1,26 @@
+{
+  "name": "@hisener/timestamp-api",
+  "version": "0.0.1",
+  "description": "Timestamp microservice api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hisener/timestamp-api.git"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "jade": "^1.11.0"
+  },
+  "keywords": [
+    "timestamp"
+  ],
+  "author": "hisener",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hisener/timestamp-api/issues"
+  },
+  "homepage": "https://github.com/hisener/timestamp-api#readme"
+}

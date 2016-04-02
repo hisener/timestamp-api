@@ -1,0 +1,25 @@
+extend layout
+block content
+  
+  h1 API Project: Timestamp Microservice
+  p Description. TODO
+  hr
+  .row
+    div.col-sm-6.col-xs-12
+      pre GET /:timestamp (integer)
+      p
+        b Example usage
+      p #{url}1450137600
+      p
+        b Response example
+      code
+        | { "unix": 1450137600, "natural": "December 15, 2015" }
+    div.col-sm-6.col-xs-12
+      pre GET /:date (string)
+      p
+        b Example usage
+      p #{url}December%2015,%202015
+      p
+        b Response example
+      code
+        | { "unix": 1450137600, "natural": "December 15, 2015" }
