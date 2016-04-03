@@ -2,24 +2,20 @@ extend layout
 block content
   
   h1 API Project: Timestamp Microservice
-  p Description. TODO
+  p Pass a string as a parameter either a unix timestamp or a natural language date.
+  p If it valid it returns both the unix timestamp and the natural language form of that date, otherwise both null.
   hr
   .row
-    div.col-sm-6.col-xs-12
-      pre GET /:timestamp (integer)
-      p
-        b Example usage
-      p #{url}1450137600
-      p
-        b Response example
-      code
-        | { "unix": 1450137600, "natural": "December 15, 2015" }
-    div.col-sm-6.col-xs-12
-      pre GET /:date (string)
-      p
-        b Example usage
-      p #{url}December%2015,%202015
-      p
-        b Response example
-      code
-        | { "unix": 1450137600, "natural": "December 15, 2015" }
+    +method('GET /:timestamp (integer)', '958590000', '{ "unix": 958590000, "natural": "May 17, 2000" }')
+    +method('GET /:date (string)', 'April%203,%202016', '{ "unix": 1459641600, "natural": "April 3, 2016" }')
+        
+mixin method(title, example, response)
+  div.col-sm-6.col-xs-12
+    pre #{title}
+    p
+      b Example usage
+    p
+      a(href='#{url}#{example}' target='_blank') #{url}#{example}
+    p
+      b Response example
+    code #{response}

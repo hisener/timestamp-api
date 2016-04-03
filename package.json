@@ -1,6 +1,6 @@
 {
   "name": "@hisener/timestamp-api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Timestamp microservice api",
   "main": "app.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "jade": "^1.11.0"
   },
   "keywords": [
-    "timestamp"
+    "timestamp", "api", "free code camp"
   ],
   "author": "hisener",
   "license": "MIT",
