@@ -1,0 +1,8 @@
+h1 {
+  font-size: 36px;
+}
+@media (max-width: 767px) {
+  .col-xs-12 {
+    margin-top: 20px;
+  }
+}

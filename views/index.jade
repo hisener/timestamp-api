@@ -8,7 +8,10 @@ block content
   .row
     +method('GET /:timestamp (integer)', '958590000', '{ "unix": 958590000, "natural": "May 17, 2000" }')
     +method('GET /:date (string)', 'April%203,%202016', '{ "unix": 1459641600, "natural": "April 3, 2016" }')
-        
+  hr
+  p
+    a(href='https://github.com/hisener/timestamp-api' target='_blank') Github repository
+
 mixin method(title, example, response)
   div.col-sm-6.col-xs-12
     pre #{title}
